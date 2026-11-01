@@ -27,7 +27,7 @@
   <main class="legal">
     <div class="wrap">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated October 30, 2026</p>
+      <p class="updated">Last updated November 1, 2026</p>
 
       <p>Future You is an iPhone app for daily visualization practice. This page explains what data the app handles and where it goes. The short version: there is no account, no ads and no tracking, and your goals stay on your phone unless you use a feature that needs a server.</p>
 
@@ -36,8 +36,9 @@
 
       <h2>What leaves your device</h2>
       <ul>
+        <li><strong>Only after you allow it.</strong> The app asks before anything is sent to the AI services below, and you can switch this off at any time in Settings &gt; AI. While it is off, nothing you write leaves your phone.</li>
         <li><strong>Coach and reality previews.</strong> When you message the coach or generate a reality preview, the text you send, together with the goal it relates to, is passed through our server (a Cloudflare Worker) to OpenAI to create a reply. Our server does not store or log the content of these messages. To prevent abuse, it keeps short-lived usage counters tied to a random device identifier and your IP address, which expire within two days. OpenAI handles them under its <a href="https://openai.com/policies/api-data-usage-policies" rel="noopener">API data usage policy</a>.</li>
-        <li><strong>Voice narration.</strong> Guided scenes are read aloud with a voice built into iOS. If a third-party voice service is turned on, the text of the scene is sent to that service to create the audio, which is then cached on your device.</li>
+        <li><strong>Voice narration.</strong> With AI allowed, the lines of a guided session (which can include your goal) are passed through our server to ElevenLabs to create the spoken audio, which is then saved on your device so each line is only created once. Our server does not store the text. ElevenLabs handles it under its <a href="https://elevenlabs.io/privacy-policy" rel="noopener">privacy policy</a>. With AI off, the voice built into iOS is used and nothing is sent.</li>
         <li><strong>Purchases.</strong> Subscriptions are handled by Apple through the App Store. We never see your payment details. Apple's privacy policy applies to those transactions.</li>
       </ul>
 
